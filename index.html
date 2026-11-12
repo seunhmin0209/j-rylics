@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101014">
+<title>J-Lyrics</title>
+<style>
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  background:#101014;
+  color:#f5f5f7;
+  font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+}
+header {
+  padding:25px 22px 15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo { font-size:25px; font-weight:800; }
+.logo span { color:#1ed760; }
+main { padding:20px; max-width:600px; margin:auto; }
+.tag { color:#1ed760; font-size:12px; letter-spacing:2px; }
+h1 { font-size:30px; margin:10px 0; }
+.sub { color:#999; font-size:14px; }
+.song {
+  margin-top:28px;
+  padding:22px;
+  background:#1c1c23;
+  border-radius:20px;
+}
+.song small { color:#1ed760; }
+.song h2 { margin:10px 0 5px; }
+.artist { color:#aaa; }
+button {
+  width:100%;
+  border:0;
+  border-radius:30px;
+  padding:15px;
+  margin-top:18px;
+  background:#1ed760;
+  color:#101014;
+  font-size:16px;
+  font-weight:700;
+}
+.lyrics {
+  margin-top:28px;
+  padding:22px;
+  background:#1c1c23;
+  border-radius:20px;
+}
+.line { margin:22px 0; }
+.jp { font-size:19px; font-weight:600; }
+.kr { color:#1ed760; margin-top:8px; }
+.muted { color:#777; }
+footer {
+  text-align:center;
+  color:#666;
+  padding:35px 10px;
+  font-size:12px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">J<span>-</span>Lyrics</div>
+  <div>🎧</div>
+</header>
+<main>
+  <div class="tag">JAPANESE MUSIC TRANSLATOR</div>
+  <h1>노래의 의미를<br>더 가까이.</h1>
+  <p class="sub">일본어 원문과 한국어 번역을 한 화면에서.</p>
+
+  <section class="song">
+    <small>NOW PLAYING</small>
+    <h2 id="title">재생 중인 곡이 없습니다</h2>
+    <div class="artist" id="artist">Spotify 연결을 기다리는 중</div>
+    <button onclick="connectSpotify()">Spotify 연결하기</button>
+  </section>
+
+  <section class="lyrics">
+    <div class="tag">LIVE LYRICS</div>
+    <div class="line">
+      <div class="jp muted">일본어 원문이 여기에 표시됩니다.</div>
+      <div class="kr">한국어 번역이 여기에 표시됩니다.</div>
+    </div>
+    <div class="line">
+      <div class="jp muted">곡을 연결하면 가사를 불러옵니다.</div>
+      <div class="kr">번역도 함께 표시할 예정입니다.</div>
+    </div>
+  </section>
+</main>
+<footer>J-Lyrics · Made for Japanese music lovers</footer>
+<script>
+function connectSpotify() {
+  alert("Spotify 연동 기능은 다음 개발 단계에서 추가됩니다.");
+}
+</script>
+</body>
+</html>
